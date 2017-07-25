@@ -1,28 +1,39 @@
-# JsWeekFourFriday
+# Geocache API
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
+#### An Epicodus independent project
 
-## Development server
+#### By Andrew Glines
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Description
 
-## Code scaffolding
+This app will allow a user to enter either an address or a latitude / longitude, and the user will receive all of those pieces of data back.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
+|Behavior| Input (User Action/Selection) |Output|
+|---|:---|:---|
+| User can enter an address of as little or as specific as they desire, and receive the lat/long of that address | "100 E Main" | Latitude: 34.9499851, Longitude: -81.9311803, Address: 100 E Main St, Spartanburg, SC 29306, USA |
+| User can enter a latitude and longitude and receive an approximate address back | Latitude "30", Longitude "-90" | Latitude: 35.0000164, Longitude: -90.0000326, Address: 5435 Lastrada St, Memphis, TN 38116, USA |
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+## Setup
+- Clone the repo to your desktop.
+- Run `npm install` and `bower install`.
+- Run `npm install promise-polyfill --save-exact`
+- You will need a Google Maps API key, saved to a file called api-keys.ts
+- Run `ng serve` for a dev server. Navigate to http://localhost:4200/ in a web browser.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Support and contact details
+To get more help on the `angular-cli` use `ng help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
-## Running end-to-end tests
+If you have any issues or have questions, ideas, concerns, or contributions please contact the contributor through Github.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
+## Technologies Used
+* Angular
+* API
+* Bootstrap
+* HTML
 
-## Further help
+### License
+This software is licensed under the MIT license.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Copyright (c) 2017 Andrew Glines and Epicodus
