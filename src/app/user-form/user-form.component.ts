@@ -13,12 +13,15 @@ export class UserFormComponent {
 
   constructor(private geocodeService: GeocodeService) { }
 
-  result: any[] = null;
+  result: any = null;
+  userLat: any = null;
 
   getLatlongFromAddress(address: string) {
     this.geocodeService.getLatlongFromAddress(address).subscribe(response => {
       this.result = response.json();
-      console.log("made it!");
+      console.log(this.result);
+      this.userLat = this.result.results[0].geometry.location.lat;
+      console.log(this.userLat);
     });
   }
 
