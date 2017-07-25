@@ -3,14 +3,14 @@ import { ModuleWithProviders }  from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 
-import { AddressComponent } from './address/address.component';
+import { UserFormComponent } from './user-form/user-form.component';
 
 
 const appRoutes: Routes = [
 
   {
     path: '',
-    component: WelcomeComponent
+    component: UserFormComponent
   }
 
 ]

@@ -1,3 +1,8 @@
-<p>
-  user-form works!
-</p>
+<h1>Address to Lat/Long Entry</h1>
+<div>
+<form class="form-group">
+  <label>Enter an address, spaces included, no zip</label>
+  <input #newAddress>
+  <button (click)="getLatlongFromAddress(newAddress.value)">Get Lat/Long</button>
+</form>
+</div>

@@ -4,13 +4,14 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { AddressComponent } from './address/address.component';
 import { UserFormComponent } from './user-form/user-form.component';
+
+import { routing } from './app.routing';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    AddressComponent,
     UserFormComponent
   ],
   imports: [

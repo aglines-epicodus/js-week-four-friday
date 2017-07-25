@@ -12,8 +12,8 @@ export class GeocodeService {
     return this.http.get("https://maps.googleapis.com/maps/api/geocode/json?address=" + address + "&key=" + geoKey)
   }
 
+  getAddressFromLatLong(lat: number, long: number) {
+    return this.http.get("https://maps.googleapis.com/maps/api/geocode/json?latlng=" + lat + long + "&key=" + geoKey)
+  }
+
 }
-
-
-// google address :
-// https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=YOUR_API_KEY
