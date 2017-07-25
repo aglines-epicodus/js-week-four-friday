@@ -18,3 +18,9 @@
   <button (click)="getAddressFromLatLong(newLat.value, newLong.value)">Get Address</button>
 </form>
 </div>
+
+
+<div *ngIf="result">
+  <h2>Latitude: {{result.results[0].geometry.location.lat}}</h2>
+  <h2>Longitude: {{result.results[0].geometry.location.lng}}</h2>
+  <h2>Address: {{result.results[0].formatted_address}}</h2>

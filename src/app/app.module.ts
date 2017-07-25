@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { UserFormComponent } from './user-form/user-form.component';
 
 import { routing } from './app.routing';
+import { ResultComponent } from './result/result.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    UserFormComponent
+    UserFormComponent,
+    ResultComponent
   ],
   imports: [
     BrowserModule,

@@ -21,7 +21,6 @@ export class UserFormComponent {
   getLatlongFromAddress(address: string) {
     this.geocodeService.getLatlongFromAddress(address).subscribe(response => {
       this.result = response.json();
-      // console.log(this.result);
       this.userLat = this.result.results[0].geometry.location.lat;
       this.userLong = this.result.results[0].geometry.location.lng;
       console.log("lat and long: " + this.userLat + " " + this.userLong);
