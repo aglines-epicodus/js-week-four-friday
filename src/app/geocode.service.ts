@@ -12,8 +12,8 @@ export class GeocodeService {
     return this.http.get("https://maps.googleapis.com/maps/api/geocode/json?address=" + address + "&key=" + geoKey)
   }
 
-  getAddressFromLatLong(lat: number, long: number) {
-    return this.http.get("https://maps.googleapis.com/maps/api/geocode/json?latlng=" + lat + long + "&key=" + geoKey)
+  getAddressFromLatLong(lat: string, long: string) {
+    return this.http.get("https://maps.googleapis.com/maps/api/geocode/json?latlng=" + lat + "," + long + "&key=" + geoKey)
   }
 
 }

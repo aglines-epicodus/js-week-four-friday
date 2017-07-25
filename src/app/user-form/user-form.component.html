@@ -6,3 +6,15 @@
   <button (click)="getLatlongFromAddress(newAddress.value)">Get Lat/Long</button>
 </form>
 </div>
+
+
+<h1>Lat/Long to Address Entry</h1>
+<div>
+<form class="form-group">
+  <label>Enter a latitude</label>
+  <input #newLat>
+  <label>Enter a latitude</label>
+  <input #newLong>
+  <button (click)="getAddressFromLatLong(newLat.value, newLong.value)">Get Address</button>
+</form>
+</div>
